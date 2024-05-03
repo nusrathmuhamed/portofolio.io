@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+  <style>
+  body {
+    font-family: MonoLisa;
+    background-color: pink;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:peachpuff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.animated {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.animate {
+    opacity: 1;
+}
+
+.fadeInDown {
+    animation: fadeInDown 0.5s forwards;
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.5s forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="about-me">
+            <h1 class="animated fadeInDown">Hi im Nusrath </h1>
+            <p class="animated fadeInUp">I have always been fascinated by the power of technology
+              to solve real-world problems,which led me to pursue in software development
+              study with a passion for developing different eebsites ,apps and so on eith the new program.</p>
+            <img src="Nusrah.jpg" alt="your image" class="animated fadeIn">
+            <p class="animated fadeInUp">I'm a student in high school at essjt and i usually develop front end.</p>
+        
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script>
+        $(document).ready(function() {
+            $(".animated").each(function() {
+                $(this).addClass("animate");
+            });
+        });
+    </script>
+</body>
+</html>
+              

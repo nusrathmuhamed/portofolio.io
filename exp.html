@@ -1,0 +1,100 @@
+<!Doctype html>
+  <html>
+  <head>
+    <title>real</title>
+    <style>
+    background-color:pink
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.box {
+  width: 250px;
+  height: 150px;
+  background-color: pink;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.box-1 {
+  background-color: peachpuff;
+  animation: bounce 2s infinite;
+}
+
+.box-2 {
+  background-color: plum;
+  animation: bounce 2s infinite;
+}
+
+.box-3 {
+  background-color: paleturquoise;
+  animation: bounce 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}body:{background-color:pink}
+    </style>
+  </head>
+<body>
+<div class="container">
+  <div class="box box-1">
+    <h2>Front-end developer</h2>
+    <p> I enjoy the creative outlet it 
+      provides and the opportunity to put my programing skills to work
+    </p>
+  </div>
+  <div class="box box-2">
+    <h2>Designing</h2>
+    <p>Am obsessed with design~
+      on my side it makes me think behind the box.</p>
+  </div>
+  <div class="box box-3">
+    <h2>Art </h2>
+    <p>I make  n ♡art because i aint very creative in talking
+      i talk through my art work.</p>
+  </div>
+</div>
+</body>
+</html>

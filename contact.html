@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+    background-color:peachpuff;
+}
+
+header {
+  background-color: darkblue;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+section {
+  flex-basis: 48%;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+label {
+  flex-basis: 100%;
+}
+
+input, textarea {
+  flex-basis: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #peachpuff;
+}
+
+footer {
+  background-color: #pink;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-basis: 100%;
+  }
+}
+``
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Address</h2>
+      <p>KN 246.</p>
+      <p>Anytown</p>
+    </section>
+    <section>
+      <h2>Phone</h2>
+      <p>(+250)727041859/p>
+    </section>
+    <section>
+      <h2>Email</h2>
+      <p><a href="mailto:info@example.com">nusratmuhammed72@.com</a></p>
+    </section>
+    <section>
+      <h2>Social Media</h2>
+      <ul>
+        <li><a href="nusrat">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="nuzii72">Instagram</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
